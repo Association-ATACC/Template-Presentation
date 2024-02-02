@@ -1,0 +1,55 @@
+%===============================================================================
+%	IMPORTATION ET THEMES
+%===============================================================================
+\documentclass[aspectratio=169,xcolor=dvipsnames, t]{beamer}
+\usepackage[francais]{babel}
+\usepackage{fontspec} % package de font personnaliser
+\usetheme{AtaccStyle}
+\usepackage{tikz}
+% Ajout des imports supplémentaire en dessous
+
+%===============================================================================
+%	TITRE ET CONFIGURATION DE PAGE
+%===============================================================================
+
+% The short title appears at the bottom of every slide, the full title is only 
+%   on the title page
+\title[short title]{Long Titre de la Présentation}
+\subtitle{Sous titre}
+
+\author{Nom prénom}
+\institute[ATACC, Association de tutorat]{ATACC, Association de tutorat
+\newline
+Université de Rouen
+}
+
+\date{\today} % la date
+
+%===============================================================================
+%	DIAPO DE LA PRESENTATION
+%===============================================================================
+
+\begin{document}
+
+\maketitlepage
+
+% l'option t permet d'aligner le contenu de la frame vers le haut
+\begin{frame}[t]{Resume}
+    \tableofcontents
+\end{frame}
+
+\makesection{Je est}
+
+\begin{frame}{Le test}
+    Le fond est très moche mais bon, il va falloir en mettre un nouveau !!!
+\end{frame}
+
+%-------------------------------------------------------------------------------
+% Final PAGE
+% Set the text that is showed on the final slide
+\finalpagetext{Thank you for your attention}
+%-------------------------------------------------------------------------------
+\makefinalpage
+%-------------------------------------------------------------------------------
+
+\end{document}
